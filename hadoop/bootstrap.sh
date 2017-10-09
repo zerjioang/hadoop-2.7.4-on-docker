@@ -18,6 +18,25 @@ $HADOOP_PREFIX/sbin/start-dfs.sh
 $HADOOP_PREFIX/sbin/start-yarn.sh
 $HADOOP_PREFIX/sbin/mr-jobhistory-daemon.sh start historyserver
 
+echo "-----------------------------------------"
+echo "                  HADOOP                 "
+echo "-----------------------------------------"
+
+echo "
+
+	Available services:
+	
+	IPC port: 				http://localhost:8030/
+	IPC port: 				http://localhost:8031/
+	IPC port: 				http://localhost:8032/
+	IPC port: 				http://localhost:8033/
+	DFS Health:				http://localhost:50070/
+	Datanode: 				http://localhost:50075/
+	Status panel:			http://localhost:50090
+	Application UI:			http://localhost:8088/cluster
+"
+
+
 if [[ $1 == "-d" ]]; then
   while true; do sleep 1000; done
 fi

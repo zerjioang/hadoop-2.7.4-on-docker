@@ -1,4 +1,4 @@
-# Creates pseudo distributed hadoop 2.7.1
+# Creates pseudo distributed hadoop 2.7.4
 #
 # docker build -t sequenceiq/hadoop .
 
@@ -74,7 +74,7 @@ RUN chown root:root /root/.ssh/config
 # # installing supervisord
 # RUN yum install -y python-setuptools
 # RUN easy_install pip
-# RUN curl https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -o - | python
+# RUN curl https://bootstrap.pypa.io/ez_setup.py -o - | python
 # RUN pip install supervisor
 #
 # ADD supervisord.conf /etc/supervisord.conf
